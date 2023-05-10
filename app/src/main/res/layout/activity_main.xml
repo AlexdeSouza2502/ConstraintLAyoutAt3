@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:justificationMode="inter_word"
+        android:text="Aenean eget libero sem. Donec viverra lorem odio, et elementum ante bibendum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim eu neque porta scelerisque. Mauris ullamcorper risus urna, non porttitor risus bibendum quis. Nulla ac convallis lectus, sit amet congue tortor. Sed accumsan lorem erat, in blandit sem dapibus id. Suspendisse ipsum dui, porttitor quis neque eu, rhoncus euismod nunc. Donec non diam rhoncus lorem imperdiet pharetra tristique ut urna. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoSizeTextType="uniform"
+        android:justificationMode="inter_word"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut pulvinar elit. Donec eget iaculis ex, pharetra gravida ligula. Maecenas et vehicula urna. Nunc lorem tellus, porta eget magna egestas, sagittis porta ante. In hac habitasse platea dictumst. Mauris sed consequat arcu. Morbi sem elit, tempus in lectus eget, porta facilisis lectus. Cras malesuada laoreet orci nec fringilla. Cras a imperdiet enim. Nam porta neque sit amet placerat aliquam. Aenean at nulla ut neque euismod luctus. Curabitur in ipsum viverra tellus consequat aliquet id ac turpis. Vestibulum in est scelerisque, convallis enim vel, sodales lacus. Praesent tempor sodales volutpat.  Maecenas iaculis malesuada porttitor. Praesent auctor augue sit amet arcu euismod maximus. Donec sed diam vehicula, molestie ligula non, interdum erat. Suspendisse mattis erat in odio fermentum euismod. "
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="textView,textView3"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:justificationMode="inter_word"
+        android:text="Lorem Ipsum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Anterior"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Printar"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/barrier6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Proximo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/barrier6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
